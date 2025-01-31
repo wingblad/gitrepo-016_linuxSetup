@@ -9,7 +9,12 @@ sudo apt update && sudo apt upgrade -y
 
 # Install Essential Packages
 echo_red "Installing essential packages..."
-sudo apt install build-essential curl git vim net-tools zsh micro qalc gpg python3 python3-pip -y
+sudo apt install build-essential curl git vim net-tools zsh micro qalc gpg python3 python3-pip openssh-server -y
+
+# Enable SSH server
+echo_red "Enabling SSH server..."
+sudo systemctl enable ssh
+sudo systemctl start ssh
 
 # Install eza
 sudo mkdir -p /etc/apt/keyrings

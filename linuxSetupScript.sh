@@ -9,7 +9,7 @@ sudo apt update && sudo apt upgrade -y
 
 # Install Essential Packages
 echo_red "Installing essential packages..."
-sudo apt install build-essential curl git vim net-tools zsh micro qalc gpg python3 python3-pip python3-dev openssh-server cifs-utils nginx default-libmysqlclient-dev pkg-config -y
+sudo apt install build-essential curl git vim net-tools zsh micro qalc gpg openssh-server cifs-utils nginx default-libmysqlclient-dev pkg-config -y
 
 # Enable SSH server
 echo_red "Enabling SSH server..."
@@ -28,6 +28,7 @@ sudo apt install -y eza
 echo_red "Installing Python and pip..."
 sudo apt install -y python3 python3-pip -y
 sudo apt install python3-venv -y
+sudo apt install python3-dev -y
 sudo apt install python-is-python3 -y
 
 # Install Docker

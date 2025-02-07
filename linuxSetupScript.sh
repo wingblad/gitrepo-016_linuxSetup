@@ -9,7 +9,7 @@ sudo apt update && sudo apt upgrade -y
 
 # Install Essential Packages
 echo_red "Installing essential packages..."
-sudo apt install build-essential curl git vim net-tools zsh micro qalc gpg openssh-server cifs-utils nginx default-libmysqlclient-dev pkg-config -y
+sudo apt install build-essential curl git vim net-tools zsh micro qalc gpg openssh-server cifs-utils nginx default-libmysqlclient-dev pkg-config smbclient -y
 
 # Enable SSH server
 echo_red "Enabling SSH server..."

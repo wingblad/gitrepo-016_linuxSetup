@@ -9,7 +9,7 @@ sudo apt update && sudo apt upgrade -y
 
 # Install Essential Packages
 echo_red "Installing essential packages..."
-sudo apt install build-essential curl git vim net-tools zsh micro qalc gpg python3 python3-pip openssh-server -y
+sudo apt install build-essential curl git vim net-tools zsh micro qalc gpg python3 python3-pip openssh-server cifs-utils -y
 
 # Enable SSH server
 echo_red "Enabling SSH server..."
